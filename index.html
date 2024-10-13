@@ -1,89 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mateo Cordoba - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav>
-    <div class="navbar-left">Mateo Cordoba</div>
-    <div class="navbar-right">
-      <a href="#home">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact Me</a>
-    </div>
-  </nav>
-
-  <!-- Sections -->
-  <section id="home">
-    <div class="content-container">
-      <h1>Welcome to My Portfolio ajajajjaaaaaaaaaaaaaaaaaaaaaaaaaajjajajajjajajaj</h1>
-      <p>Economist | Data Scientist | Developer</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="content-container">
-      <h2>About Me</h2>
-      <p>
-        I am an economist with a strong background in data science and 3 years of experience in analyzing, modeling, and interpreting complex data. 
-        My expertise lies in building data-driven solutions that help organizations make strategic decisions. 
-        I have experience in data analysis, data engineering, and software development, focusing on creating efficient and scalable solutions.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="content-container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <!-- Data Analyst Projects -->
-        <div class="project-category">
-          <h3>Data Analyst Projects</h3>
-          <ul>
-            <li><a href="https://github.com/your-repository" target="_blank">Economic Forecasting Model</a> - Developed a time-series forecasting model using ARIMA to predict macroeconomic indicators.</li>
-            <li><a href="https://github.com/your-repository" target="_blank">Customer Segmentation Analysis</a> - Applied clustering techniques to segment customers for a retail client, increasing targeted marketing efficiency by 30%.</li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mateo Cordoba</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me & Experience</a></li>
+          <!--li><a href="#experience">Experience</a></li-->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mateo Cordoba</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <!-- Data Engineering Projects -->
-        <div class="project-category">
-          <h3>Data Engineering Projects</h3>
-          <ul>
-            <li><a href="https://github.com/your-repository" target="_blank">Data Pipeline for Financial Data</a> - Designed and implemented a robust data pipeline using Apache Airflow and Python to automate ETL processes for financial data.</li>
-            <li><a href="https://github.com/your-repository" target="_blank">Data Warehouse Setup</a> - Built a data warehouse using SQL and AWS Redshift, optimizing data retrieval for business analytics.</li>
-          </ul>
-        </div>
-
-        <!-- Developer Projects -->
-        <div class="project-category">
-          <h3>Developer Projects</h3>
-          <ul>
-            <li><a href="https://github.com/your-repository" target="_blank">Shiny App for Real-Time Data Visualization</a> - Developed a Shiny application in R to visualize real-time data trends for a healthcare client.</li>
-            <li><a href="https://github.com/your-repository" target="_blank">Predictive Text Model App</a> - Created a web app using R, Shiny, and JavaScript that provides predictive text suggestions based on n-grams.</li>
-          </ul>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="content-container">
-      <h2>Contact Me</h2>
-      <div class="contact-icons">
-        <a href="https://github.com/your-profile" target="_blank">GitHub</a>
-        <a href="mailto:your-email@example.com">Email</a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-mat.png" alt="Mateo C profile picture" />
       </div>
-    </div>
-  </section>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mateo Cordoba</h1>
+        <p class="section__text__p2">Data developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv_mateo.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mateocordobatoro/"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mateocordobatoro"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="big_section1">
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me & Experience</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/profile-pic-mat2.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />Developing Data Products</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Sc. Economics<br /></p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p id="about_me_info">
+                Hi, I’m Mateo Córdoba, an economist and current graduate student
+                in statistics at the National University of Colombia. I have
+                nearly 3 years of experience working with data, focusing on
+                transforming raw information into actionable insights.
+              </p>
 
-  <!-- JavaScript for Smooth Scrolling -->
-  <script src="script.js"></script>
-</body>
+              <p id="about_me_info">
+                I’m passionate about developing data-driven solutions, and I
+                enjoy exploring the vast potential that data holds to solve
+                real-world problems. In addition to my professional interests, I
+                love sports and traveling.
+              </p>
+
+              <p id="about_me_info">
+                You can explore my work and academic background in more detail
+                here, and feel free to contact me!
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+    <section id="big_section2">
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="projects-container">
+
+          <!-- Proyecto 1 -->
+          <div class="project-card">
+            <div class="project-info">
+              <h4><strong>Personal Portfolio - Web Page Hosted on Azure</strong></h4>
+              <p>Description: My personal portfolio is a web page hosted on Azure. It uses GitHub Actions to implement continuous integration: each update in the GitHub repository automatically triggers an update to the live website in real-time.</p>
+              <p><strong>Programming Languages:</strong> HTML, CSS, JavaScript</p>
+              <p><strong>Technologies Used:</strong> Continuous Integration (CI/CD) with GitHub Actions, Deployment on Azure</p>
+              <p><strong>Classification:</strong> Cloud Computing, Web Development</p>
+              <p><a href="https://github.com/mateocordobatoro/mateo_portfolio" target="_blank">Repository</a> | <a href="#" target="_blank">Live Demo</a></p>
+            </div>
+            <div class="project-preview">
+              <img src="./portfolio_previews/portfolio_preview.PNG" alt="Portfolio Preview">
+            </div>
+          </div>
+      
+            <!-- Project 2: Biodiversity Species Visualization App -->
+            <div class="project-card">
+              <div class="project-info">
+                <h4><strong>Biodiversity Species Visualization App</strong></h4>
+                <p>Description: I created a Shiny app that visualizes observed species on a map using data from the Global Biodiversity Information Facility (GBIF), focused on species from Poland. Users can search for species by their common or scientific names and view their observations on a map, along with a timeline showing when they were observed.</p>
+                <p><strong>Programming Languages:</strong> R, Shiny, JavaScript, HTML, CSS</p>
+                <p><strong>Techniques Used:</strong> Geospatial visualization, data filtering, custom user interface design</p>
+                <p><strong>Classification:</strong> Data Visualization, Geospatial Analysis</p>
+                <p>
+                  <a href="https://github.com/mateocordobatoro/appsilonAssigment" target="_blank">Repository</a> | 
+                  <a href="https://matcord.shinyapps.io/BiodiversityApp/" target="_blank">Live Demo</a>
+                </p>
+              </div>
+              <div class="project-preview">
+                <img src="./portfolio_previews/preview-biodiversity.png" alt="Preview of the biodiversity app">
+              </div>
+            </div>
+
+              <!-- Project 3: Predictive Text App with N-grams -->
+              <div class="project-card">
+                <div class="project-info">
+                  <h4><strong>Predictive Text App using N-grams</strong></h4>
+                  <p>Description: I developed a natural language processing (NLP) app that predicts the next word using N-grams. The app is designed to simulate the experience of a predictive keyboard, similar to those found on mobile phones. I implemented a custom interface using HTML, CSS, and JavaScript to enhance user experience.</p>
+                  <p><strong>Programming Languages:</strong> R, Shiny, JavaScript, HTML, CSS</p>
+                  <p><strong>Techniques Used:</strong> N-grams, Natural Language Processing (NLP), custom interface design</p>
+                  <p><strong>Classification:</strong> Natural Language Processing, UI/UX Design</p>
+                  <p>
+                    <a href="https://github.com/mateocordobatoro/next_word_app" target="_blank">Repository</a> | 
+                    <a href="https://matcord.shinyapps.io/next_word_app/" target="_blank">Live Demo</a>
+                  </p>
+                </div>
+                <div class="project-preview">
+                  <img src="./portfolio_previews/preview-nlp.PNG" alt="Preview of the NLP app">
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+      </section>
+    </section>
+
+    <footer>
+      <div id = "contact" class="footer-content">
+        <p class="section__text__p1">Let's work together</p>
+        <h1 class="title">Contact me</h1>
+
+        <div class="contact-container">
+          <a href="https://www.linkedin.com/in/mateocordobatoro/" target="_blank" class="icon" title="LinkedIn">
+            <img src="./assets/linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="mailto:cordobatoro.mateo@gmail.com" class="icon" title="Email">
+            <img src="/assets/envelope.svg" alt="Email">
+          </a>
+          <a href="https://medium.com/@cordobatoro.mateo" target="_blank" class="icon" title="Medium">
+            <img src="/assets/medium.svg" alt="Medium">
+          </a>
+          <a href="https://github.com/mateocordobatoro" target="_blank" class="icon" title="Medium">
+            <img src="/assets/github.png" alt="Github">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
