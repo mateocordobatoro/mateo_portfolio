@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.13/lottie.min.js"></script>
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -35,42 +37,57 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic-mat.png" alt="Mateo C profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mateo Cordoba</h1>
-        <p class="section__text__p2">Data developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/cv_mateo.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mateocordobatoro/"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/mateocordobatoro"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="big_section1">
+
+  <section id="big_section4"> 
+        <section id="profile">
+          <div class="section__pic-container">
+            <!--img src="./assets/profile-pic-mat.png" alt="Mateo C profile picture" /-->
+            <div id="lottie-container" style="width: 600px; height: 400px;"></div>
+            <script>
+              var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-container'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './assets/animation.json' // Ruta relativa al archivo JSON
+              });
+            </script>
+
+          </div>
+          <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mateo Cordoba</h1>
+            <p class="section__text__p2">Data developer</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/cv_mateo.pdf')"
+              >
+                Download CV
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/mateocordobatoro/"
+              />
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/mateocordobatoro"
+              />
+            </div>
+          </div>
+        </section>
+  </section>
+
+    <section id="big_section3">
       <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me & Experience</h1>

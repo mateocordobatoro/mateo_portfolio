@@ -3,10 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --bg-color1: rgb(82, 185, 247);
-  --bg-color2: white;
+  --bg-color2: rgb(82, 185, 247);
+  --bg-color1: white;
   --bg-color3: rgba(34,168,91,255);
   --bg-color4: #333;
+  --bg-color5: #E5E4E2;
+  
   --text-nav-color1: white;
 
   
@@ -34,6 +36,15 @@
   background-color: inherit;
 }
 
+#big_section3 {
+  background-color: var(--bg-color5);
+  margin: 0;
+  padding: 0;
+}
+
+#big_section3 * {
+  background-color: inherit;
+}
 
 #about_me_info {
 
@@ -288,6 +299,8 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+
+
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
@@ -313,6 +326,10 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+.btn-color-11 {
+  background-color: rgb(53, 53, 53);
 }
 
 /* ABOUT SECTION */
@@ -486,6 +503,7 @@ article .icon {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: inherit;
 }
 
 body {
@@ -494,7 +512,7 @@ body {
 }
 
 footer {
-  background-color: var(--bg-color1);
+  background-color: var(--bg-color2);
   color: white;
   display: flex;
   justify-content: center;
