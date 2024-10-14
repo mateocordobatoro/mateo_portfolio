@@ -512,8 +512,8 @@ body {
 }
 
 footer {
-  background-color: var(--bg-color2);
-  color: white;
+  background-color: var(--bg-color5);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
