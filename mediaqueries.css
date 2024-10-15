@@ -195,7 +195,13 @@
       width: 100%; /* Ajustar la imagen al 100% del contenedor del icono */
       height: auto; /* Mantener la proporción de la imagen */
     } 
-  
+
+
+    footer{
+      height: 62%;
+    }
+
+
 
 
 
