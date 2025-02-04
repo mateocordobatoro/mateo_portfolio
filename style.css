@@ -511,7 +511,7 @@ body {
 }
 
 footer {
-  background-color: var(--bg-color5);
+  background-color: white;
   color: black;
   display: flex;
   justify-content: center;
