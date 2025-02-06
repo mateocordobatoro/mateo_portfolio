@@ -59,11 +59,8 @@
   margin: 0;
   padding: 0;
   background: rgb(82, 185, 247);
+  font-family: "Mina", serif;
 
-}
-
-body {
-  font-family: "Poppins", sans-serif;
 }
 
 html {
