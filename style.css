@@ -61,6 +61,7 @@
   background: rgb(82, 185, 247);
   font-family: "Mina", serif;
 
+
 }
 
 html {
@@ -80,12 +81,8 @@ a,
 
 /* DESKTOP NAV */
 
-nav,
-.nav-links {
-  display: flex;
-}
-
 nav {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   height: 8vh;
